@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+</head>
+<style>
+    .container {
+        /* display flex used to take that in one line */
+        display: flex;
+    }
+
+    .card {
+        padding: 23px 13px;
+        /* border: 2px solid red; */
+        margin: 23px 12px;
+        background-color: aquamarine;
+        /*  box side shadow used to provide shadow of that box with x axis and y axis */
+        box-shadow: 10px 13px green;
+        /* iif we want to add blur radius then we have to add the x,y,anyblur radius */
+        /* box-shadow: 10px 12px 10px blue; */
+        
+        /* 1 syntax -- box-shadow: effect-x effect-y colour; */
+        /* 2 syntax-- box-shadow: effect-x effect-y blur-radius colour; */
+        /* 3 syntax-- box-shadow: effect-x effect-y blur-radius spread-radius colour; */
+     
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">card-1
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia odio dolores earum autem, maiores quidem
+                quisquam deserunt doloremque enim aspernatur nisi adipisci suscipit commodi laboriosam cum nam quam
+                architecto officia iusto tempora? Numquam, non!
+            </p>
+        </div>
+        <div class="card" id="card-1">card-2
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eos ab odit nobis, sed, pariatur cupiditate
+                deserunt dolores soluta blanditiis enim, suscipit magni laborum repellendus. Deserunt, possimus
+                consequuntur fuga molestias iusto saepe odio ipsum?
+            </p>
+        </div>
+        <div class="card" id="card-1">card-3
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio distinctio ea vel beatae iure quo, vitae
+                debitis? Similique eius maxime impedit molestias optio magnam totam incidunt, corporis amet accusamus
+                earum consectetur nihil quis repudiandae?</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

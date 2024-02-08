@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css slectors</title>
+    <style>
+        /* 
+        here it is used to coloue each and every paragraph ehich is present inside that */
+        /* but for selecting any pariculaar paragraph we will use id selector */
+        /* element selector */
+        p{
+            border: 2pxl solid rgb(0, 255, 136);
+            color:red ;
+        }
+        /* this means use this only in which we have a id name rel */
+        /* id is always unique */
+        /* but if we will use class name we can use class name as a multiple llines */
+        
+        /* ss selector */
+        .jem
+        {
+          color: pink ;
+        }#rel
+        {
+            color: powderblue;
+        }
+         cla
+        .bgblue
+        {
+            background-color: royalblue ;
+        }
+        /* group selector here we can use the group of selcector at a timr  */
+         footer, span
+        {
+            color: red;
+            background-color: rebeccapurple;
+        } 
+    </style>
+</head>
+<body>
+    <h3>css selectros</h3>
+    <p>this is a simple paragraph to domenstrate css selector</p>
+    <!-- here we have use thee id name so we can use it specically -->
+     <p id="rel" class="jem" >this is the anothe rparagraph about the give </p>
+     <div>
+         <!-- we can also use multiple classes -->
+         <p class="jem bgblue">this the another paragraph</p>
+     </div>
+     <div>
+         <footer>
+             this is my name
+         </footer>
+         <span>
+             its me
+         </span>
+     </div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+1)). What is a file?
+Answer:
+A file is a named location which stores data or information permanently. A file is always stored inside a storage device using file name
+ (e.g. STUDENT.MARKS). A file name normally has primary and secondary name separated by a “.”(DOT).
+
+2)). What is a class?
+Answer:
+A class is a blueprint from which objects are created. A class contains methods and variables associated with an instance of a class.
+
+3)).What is an object?
+Answer:
+An object is an instance of a class. For example
+class Abc{ —– This is a class
+int a; —— This is a variable
+public Abc(); —- This is contractor
+public static void main (String args[]) ——- This is a method
+{
+Abc a= new Abc(); —— This is object creation where ‘a’ is the reference variable or object name
+}
+}
+
+4)). What is a constructor?
+Answer:
+A constructor is methods which are used to create an Object of class. There are two types of constructor Default & Parameterized constructor.
+
+5)). What is the different OOPS principle?
+
+Answer:
+The basic OOPS principle are as follows,
+
+Encapsulation
+Abstraction
+Inheritance
+Polymorphism
+
+6)). What is inheritance?
+Answer:
+Inheritance is property in which the property of a parent class(Superclass) is passed on to child class(Subclass). For example
+class Abc{ —– This is a class
+int a; —— This is a variable
+public void abc(){} — Methods
+}
+class Xyz extends Abc —–(Extend is the keyword, Xyz is the subclass which inherits the properties of ABC parent class.)
+{
+public static void main (String args[]) ——- This is a method
+{
+Abc a= new Abc(); —— This is object creation where ‘a’ is the reference variable or object name
+}
+}
+
+7)). What is polymorphism?
+Answer:
+Polymorphism is the ability of an object to take on multiple forms. Most commonly polymorphism is used in OOP when a parent class reference is used to refer to a child class object.
+
+8)). What are the instance and class variables?
+Answer:
+Instance variable belongs to a particular instance of that class whereas Class variable. A class variable is also known as static variables. For example
+public class Abc{
+public int a; …….. This is an instance variable
+public static int a1;…….. This is a static or class variable
+……………………..
+……………..
+}
+
+9)).Compare method and constructor?
+Answer:
+Constructor: Used to initialize the instance of a class.
+Method: Used to perform some function or operation.
+
+Constructor: Doesn’t have a return type.
+Method: Has a return type.
+
+10)). What is a singleton class?
+Answer:
+Singleton class limits the number of objects created for a class to one but gives the flexibility of creating more objects if the situation changes.
+
+11)). What are the steps for creating the object?
+Answer:
+An object is first declared then instantiated and at last declared. For example
+Abc a= new Abc();
+
+12)). What is the different type of access modifiers?
+Answer:
+There are four type of access modifiers as given below:-
+• Visible to the overall package. No modifier needed.
+• Private – Visible to class only.
+• Public – Visible to the world.
+• Protected – Visible to package and subclass.
+
+13)).Which is the highest operator precedence in Java
+Answer:
+The operator with the highest preference is Postfix operators i.e () [].
+
+14)).What is an array?
+Answer:
+The array is a container which holds the fixed number of similar data types.
+
+15)). What is the difference between equals() and method and == operator?
+Answer:
+The equals() is a method and it matches the content of the strings whereas == is an operator and matches object or reference of the strings.
+
+16)). Is string class final?
+Answer:
+Yes
+
+17)). What is a wrapper class?
+Answer:
+To access the primitive data type as an object we use wrapper class. They are following:-
+
+Primitive Type	Wrapper class
+boolean	                   Boolean
+char	                   Character
+byte	                    Byte
+short	                   Short
+int	                   Integer
+long	                     Long
+float	                  Float
+double	                     Double
+
+18)).Difference between overloading and overriding?
+Answer:
+Overloading is when two or more methods in the same class have the same method name but different parameters(i.e different method signatures).
+Overriding is when two methods having the same method name and parameters (i.e., method signature) but one of the methods is in the parent class and the other is in the child class.
+
+19)). What are multiple inheritances in Java?
+Answer:
+Java supports multiple inheritances i.e the ability of a class to implement more than one interface. A class can implement multiple Interfaces but cannot extends multiple classes.
+
+20)). What is a stream?
+Answer:
+A stream can be defined as the sequence of data. There is two type of streams.
+InputStream: Used to read data from a source.
+OutPut Stream: Used to write data into a destination.
+
+21)). What is a Character stream?
+Answer:
+Java Character stream is basically used to perform input and output for 16 bit Unicode. The main classes users
+ are FileReader and FileWriter which internally uses FileInputStream and
+ FileOutputStream
+ so the basic difference is that FileReader and FileWriter read and writes two bites at a time respectively.
+
+22)). What is a Byte stream?
+Answer:
+Java Byte stream is basically used to perform input and output for 8 bit Unicode.
+The main classes related to byte streams are FileInputStream and FileOutputStream.
+
+23)). What is an Interface?
+Answer:
+The interface is a reference type in Java, similar to the class but its collection of abstract methods. A class can implement multiple interfaces.
+
+24)).Difference between class and interface?
+Answer:
+Below are the difference between Interface and class:-
+
+The interface cannot be instantiated.
+An interface doesn’t have any constructors.
+Interface only have abstract methods.
+A class implements an interface and extends a class.
+An interface can extend multiple interfaces.
+
+25)). What is an abstract class?
+Answer:
+A class that contains the abstract keyword in a declaration is called abstract class. The properties of the abstract class are as follows:-
+
+Abstract classes may or may not contain abstract methods but, if a class has at least one abstract method, then it must be declared abstract.
+The abstract class cannot be instantiated.
+To use an abstract class, we have to inherit it from another class.
+If we inherit an abstract class, then we have to provide implementations to all the abstract methods in it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

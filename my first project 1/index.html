@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravi fitness</title>
+    <!-- this is font address copy from google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* css reset */
+        body {
+            font-family: 'Playball', cursive;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url("man-g3c8198089_1921.jpg");
+            /* background-size: auto; */
+            /* background-image: */
+            /* background-image: image(); */
+            
+        }
+        
+
+        .left {
+            /* if we will not put inline block then this left will take  whole place in body 
+            but by using inline block it will take only that much space upto where it is  written */
+            position: absolute;
+            left: 22px;
+            display: inline-block;
+            /* border: 3px solid rgb(0, 136, 255); */
+            top: 15px;
+
+        }
+
+        .left img {
+            width: 75px;
+            /* invert funtion used to make black to white and vise versa */
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .mid {
+            /* for move it into center we will use 3 things 
+            position block,margin auto,width */
+
+            position: block;
+            width: 40%;
+            margin: 20px auto;
+            /* border: 2px solid rgb(0, 132, 255); */
+        }
+
+        .right {
+            /* position used to move the right to as per we want */
+
+            position: absolute;
+            right: 22px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid green; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar li a {
+            color: white;
+            /* line khatm krne ke liye */
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        /* hover use hota hai if we want to display our nav bar uniquily 
+        jab hum uspe click kre */
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration:unset;
+            color: grey;
+
+        }
+
+        .btn {
+
+            margin: 0px 6px;
+            background-color: rgba(35, 16, 16, 0.279);
+            color: white;
+            padding: 4px 14px;
+            /* border: 2px solid grey; */
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: grey;
+        }
+
+        .container {
+            margin: 112px 22px;
+            /* border: 2px solid; */
+            padding: 12px 8px;
+            /* border-radius: 10px; */
+            /* color: white; */
+            width: 36%;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 325px;
+            padding: 5px;
+            border-radius: 10px;
+            border: 2pxl solid black;
+            margin: 5px auto;
+            font-size: 11px;
+        }
+
+        .container button {
+            display: block;
+            width: 23%;
+            margin: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+        <!-- <div class="back">
+         <img src="man-g3c8198089_1921.jpg" alt="background-image">
+        </div> -->
+
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="arm-gfbee8f844_1280.png" alt="ravi fitness">
+            <div>Ravi fitness</div>
+        </div>
+
+        <!-- mid for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="Active">Home</a></li>
+                <li> <a href="#">About us</a></li>
+                <li> <a href="#">Fitness calculator</a></li>
+                <li> <a href="#">Contact </a></li>
+            </ul>
+        </div>
+
+
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">call us</button>
+            <button class="btn">email us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>join the best gym of rewa now </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your locality">
+            </div>
+        </form>
+        <button class="btn">submit</button>
+    </div>
+
+
+</body>
+
+</html>

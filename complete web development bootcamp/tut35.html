@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variable/custom properties</title>
+</head>
+<style>
+    /* if ewe want to make global variable  */
+    .root{
+        --box-color:green;
+        /* so here it act as a global variable */
+    }
+    .box{
+        /* want to make variable jus use (-- variable) */
+        /* here what ever variable we are using it is upto this only means it is  act as variable which 
+        will apply only inside box */
+        /* it act as a local variable */
+        --box-color: green;
+        padding: 12px 12px;
+        margin: 5px 3px;
+        border: 2px solid var(--box-color);
+        width: 200px;
+        height: 20px;
+        box-shadow: 3px 3px var(--box-color);
+        background-color: gray;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

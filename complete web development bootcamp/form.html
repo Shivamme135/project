@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h3>this is the form tag</h3>
+    <!-- here in the action we have to write where we have to submit all the datas -->
+    <!-- and what type of data that all written inside the form -->
+    <form action="prop.php">
+
+        <!-- here div tag is used as a br tag 
+        it used to do the division -->
+        <!-- so their are somany input types are  used  -->
+        <label for="name"> Name</label>
+        <div>
+            
+              <input type="text" id="name">
+        </div>
+        <br>
+        <div>
+            role:  <input type="text">
+        </div>
+        <br>
+        <div>
+            date: <input type="date" name="" id="">
+        </div>
+        <br>
+        <div>
+            number: <input type="number" name="" id="">
+        </div>
+        <br>
+        <!-- here we are using the label tage and we have to write same name as givenn in id -->
+        <div>
+            <label for="check"> check</label>
+            are you foolow instruction: <input type="checkbox" id="check">
+            
+        </div>
+        <br>
+        <div>
+            <!-- here in this we have not submitted any name so we can select both -->
+            male <input type="radio"> female <input type="radio">
+            <!-- but we have specify their name same then we can select only one of them -->
+            <div>
+                male <input type="radio" name="gendername"> female <input type="radio" name ="gendername">
+                other <input type="radio" name="gendername">
+            </div>
+            <br>
+            <div>
+              write about yourself <br> <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <!-- to make whole tage downward use alt keyword and go down -->
+            <div>
+                <input type="submit" value="submit now">
+
+                reset: <input type="reset" value="reset">
+            </div>
+            <div>
+                <!-- one more tag select -->
+                <label for="car"> Mycar</label>
+                <select name="mycar" id="car">
+                     <option value="maruti"> maruti</option>
+                     <option value="indica">indica</option>
+                </select>     
+            </div>
+             
+        </div>
+    </form>
+    
+</body>
+</html>

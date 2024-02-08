@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow functions</title>
+</head>
+<body>
+    <div class="container">
+        this is arrow function
+    </div>
+    <script>
+// 11111111111111111111111111111111111111
+        // arrow function this also sort form of funtion
+        great = ()=>{
+            console.log("hello");
+        }
+        // function great() {
+        //     console.log("hello world");
+        // }
+        great();
+//    2222222222222222222222222222222     // 
+        // let sum = (a,b)=>{
+
+        //     return a+b;
+        // }
+        // we can also write this  returnn type  as 
+
+        let sum = (a,b)=>a+b;
+
+// 3333333333333333333333333333333333333
+
+let obj1 ={
+    names:["shivam","kalua","vivek"],
+    speak(){
+        this.names.forEach((student) => {
+            console.log("kuku" + student);
+        });
+    }
+}
+obj1.speak();
+
+    </script>
+</body>
+</html>

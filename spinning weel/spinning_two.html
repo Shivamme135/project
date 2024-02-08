@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spinning wheels</title>
+    <style>
+        .container{
+            height: 100px;
+            width: 100px;
+            border: 10px solid white;
+            border-top-color: maroon;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+
+        }
+        .one_wheel{
+            height: 80px;
+            width: 80px;
+            border: 10px solid white;
+            border-top-color: blue;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        .second_wheel{
+            height: 60px;
+            width: 60px;
+            border: 10px solid white;
+            border-top-color: green;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one_wheel">
+            <div class="second_wheel">
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

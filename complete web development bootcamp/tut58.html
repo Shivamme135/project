@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript setTimeout and clearTimeout</title>
+</head>
+<body>
+    <div class="container">
+        time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("this is 58 tut");
+
+        // setTimeout --> Allow us to run the function once after the given time setInterval
+        // clearTimeout --> Allow us to run the function repeatedly after the given time interval 
+
+        // function great()
+        // {
+        //     console.log('hello friend chai peelo');
+        // }
+        // this means that yaha pe function written and time written ki kitte time bad ye display hoga
+        // setTimeout(great,5000 )
+
+
+        // display time
+        function displayTime()
+        {
+            time = new Date();
+            console.log(time);
+            document.getElementById("time").innerHTML= time;
+        }
+        setInterval(displayTime, 1000);
+    </script>
+</body>
+</html>

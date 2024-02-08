@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css tutorial</title>
+    <!-- this is an external css file which we can link directly from this file only -->
+    <!-- this is external css -->
+    <!-- 
+        here in case of a external and internal css it will act according to the precidence
+        means which written 1st will run first
+     -->
+     
+    <link rel="stylesheet" href="shivam.css">
+    <style>
+        /* but if you want to give first prefference you can write important on it
+        example below */
+        /* preference of inline css is greter than the internal css */
+        /* this is the internal css */
+        p{
+            color: black;
+            background-color: brown !important ;
+
+        }
+    </style>
+</head>
+<body>
+    <h3>this is css tutorial</h3>
+    <!-- this is inline css where we can write in one line only
+    to change the character or property of the current statement -->
+    <p style="color: red; background-color: black;">this tutorial will teach you everything which you want to learn 
+        about css
+    </p>
+
+</body>
+</html>

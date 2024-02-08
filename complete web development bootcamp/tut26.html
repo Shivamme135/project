@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+          .container{
+              height: 544;
+              width: 700px;
+              border: 2px solid black;
+              /* flex is used to diplay the box in one line  */
+              display: flex;
+              /* display in the coloum way */
+              flex-direction: row;
+              /* it will help them to display from bottom */
+              /* flex-direction: column-reverse; */
+
+         /* justify generally used to set the box in justify place 
+         as mentioned in center */
+              justify-content: center;
+
+
+          }
+          .item{
+              width: 200px;
+              height: 100px;
+              background-color:blue ;
+              border: 2px solid black;
+              margin: 5px;
+              padding: 2px;
+              
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item-1">first box</div>
+        <div class="item" id="item-2">second box</div>
+        <div class="item" id="item-3">third box</div>
+        <div class="item" id="item-4">forth box</div>
+        <div class="item" id="item-5">fifth box</div>
+        <div class="item" id="item-6">sixth box</div>
+    </div>
+</body>
+</html>

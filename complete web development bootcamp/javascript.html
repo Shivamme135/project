@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string funtions</title>
+</head>
+<body>
+    <div class="container">
+    </div>
+    <script>
+        var string1 = "this is me";
+        
+        // first substring of string
+        var index = string1.indexOf("is");
+        console.log(index);
+
+// last occurance of substring
+        index = string1.lastIndexOf("is");
+        console.log(index)
+
+        // substring of a string
+        var substr = string1.slice(0,6);
+        console.log(substr);
+
+        // to replace particular variable
+        var replaced = string1.replace("me", "you");
+        console.log(string1);
+        console.log(replaced);
+
+        // to upper and lower case
+        console.log(string1.toUpperCase());
+        console.log(string1.toLowerCase());
+
+        // for remove space
+        var str = "   this is me ";
+        console.log(str);
+        console.log(str.trim());
+
+        //  to extract the character from the string
+          console.log(string1.charAt(4));
+    </script>
+</body>
+</html>

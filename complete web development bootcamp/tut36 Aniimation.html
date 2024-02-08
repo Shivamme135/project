@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key frames and animation</title>
+</head>
+<style>
+    .container{
+        background-color: green;
+    }
+    .box{
+        background-color: grey;
+        padding: 12px 12px;
+        margin: 2px;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        /* here we are using animation */
+
+        
+        /* animation:name duration, timing-function, delay, iteration-count, direction, fill-mode; */
+
+
+        /* we can put any name to animation */
+        animation-name: shivam;
+        /* duratin means how many time it wil done */
+        animation-duration: 3s;
+        /* ittratin count means how many time it will done */
+        animation-iteration-count: 1; 
+        /* fill mode is generally used to stop at end after completing iteration
+        here forward means it will stop their only
+        in case of backward it will come at start  */
+         animation-fill-mode: backwards;
+
+         /*  */
+    }
+/* it will define from where to where it should go */
+    @keyframes shivam{
+        /* instead of this we can also do it with percentage intead of from to to
+        example 0%{}, then 25%{} , then 75%{ and write command here whar you want to do when it is 75%done } */
+        from{
+            width: 250px;
+        }
+        to{
+            width: 400px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            this is a box
+        </div>
+    </div>
+    
+</body>
+</html>
